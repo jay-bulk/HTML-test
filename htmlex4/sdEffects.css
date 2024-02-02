@@ -1,0 +1,49 @@
+﻿@charset "utf-8";
+
+/*
+   HTML - Hands-on-Exercise 4
+   
+   Star Dust Stories Design Styles
+   
+   Filename: sdEffects.css
+   Author: Rhett Bulkley
+   Date: Feb 2 2024
+
+*/
+
+/* HTML Styles */
+html {
+   background-image: url("./sdBack1.png");
+   background-attachment: fixed;
+}
+
+/* Body Styles */
+
+body {
+   
+}
+
+
+/* Navigation List Styles */
+
+body > header a {
+   
+}
+
+
+/* Section Left Styles */
+
+section#left article h1 {
+   
+}
+
+img#mportrait {
+   filter: drop-shadow(-15px 0px 5px rgba(51, 51, 51, 0.9))  grayscale(0.7) opacity(0.6);
+   transform: rotateY(180deg);
+}
+
+/* Footer Styles */
+
+footer {
+   
+}
