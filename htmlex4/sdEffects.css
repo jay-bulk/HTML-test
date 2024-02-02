@@ -20,7 +20,8 @@ html {
 /* Body Styles */
 
 body {
-   
+   background-image: url("./sdBack2.png");
+   /*background: radial-gradient(closest-side, 40%, 70%, white, 15%, rgba(151, 151, 151, 0.5), 50%);*/
 }
 
 
