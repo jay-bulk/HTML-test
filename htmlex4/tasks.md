@@ -22,4 +22,5 @@ Save the files to your “W: drive”.
 Submit the URL to sdMessier.html.
 Let’s assume that student Jane Doe has saved sdMessier.html within a folder called HtmlEx4 under her
 public_html folder on “W drive”. The URL for this file would be:
-https://cisweb.biz.colostate.edu/cis665/SP24Doe/HtmlEx4/sdMessier.html
+
+https://cisweb.biz.colostate.edu/cis665/sp24bulkley/htmlex4/sdMessier.html
