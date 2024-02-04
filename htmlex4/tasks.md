@@ -13,7 +13,7 @@ and sdEffects.css style sheets.
     fixed so that it does not scroll with the browser widow.
  - [x] In the Body Styles section, create a style rule for the body 
     element that adds the following backgrounds in the order listed:
-    - [ ] A background containing the night sky image, sdBack2.png,
+    - [x] A background containing the night sky image, sdBack2.png,
     - [x] A radial gradient circle with a size extending to the closest 
     corner and placed at the coordinates (40%, 70%) containing the color 
     white stopping at 15% of the gradient followed by the color value 
