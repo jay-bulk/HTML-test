@@ -26,7 +26,7 @@ tr {
 }
 
 th, td {
-   border: solid 1px grey;
+   border: 1px solid grey;
    vertical-align: top;
    padding: 5px;
 }
