@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+   <!--
+     HTML - Hands-on-Exercise 6
+
+      Red Ball Pizza Order Form
+      
+      Filename: order.html
+      Author: Rhett Bulkley
+      Date: Feb 6 2024
+     
+   -->
+   <meta charset="UTF-8" />
+   <title>Build your own Pizza</title>
+   <link href="redball.css" rel="stylesheet" />
+   <link href="pizza.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+   <header>
+      <img src="redball.png" alt="Red Ball Pizza" />
+      <nav>
+         <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">menu</a></li>
+            <li><a href="#">directions</a></li>
+            <li><a href="#">coupons</a></li>
+            <li><a href="#">orders</a></li>
+            <li><a href="#">catering</a></li>
+            <li><a href="#">reviews</a></li>
+         </ul>
+      </nav>
+
+      <article>
+         <h1>Online Ordering</h1>
+         <p>Thank you for using our <em>online ordering</em>
+            form for quick and easy orders, delivered free, fast, and
+            hot to your door. If you need to talk to us directly,
+            call Red Ball Pizza at (386) 555 - 7499.
+         </p>
+      </article>
+   </header>
+
+   <section>
+      <p>Required values are marked by an asterisk (*)</p>
+
+      <form id="pizza" name="pizza" action="Not Set" method="post">
+
+         <fieldset id="custInfo">
+            <legend>Customer Information</legend>
+
+            <label for="custname">Name *</label>
+            <input type="text" id="custname" name="custname" placeholder="first and last name" required />
+
+            <label for="street">Street address *</label>
+            <input type="text" id="street" name="street" placeholder="street address" required />
+
+            <label for="city">City *</label>
+            <input type="text" id="city" name="city" placeholder="city" required />
+
+            <label for="zip">Postal code *</label>
+            <input type="text" id="zip" name="zip" pattern="[0-9]{5}" placeholder="nnnnn" required />
+
+            <label for="phone">Phone *</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="nnn-nnn-nnnn"
+               required />
+
+            <label for="request">Want it your way?</label>
+            <textarea id="request" name="request" placeholder="special requests"></textarea>
+
+            <label for="instruction">Out in the woods?</label>
+            <textarea id="instruction" name="instruction" placeholder="delivery instructions"></textarea>
+
+         </fieldset>
+
+         <fieldset id="buildPizza">
+            <legend>Build Your Own Pizza</legend>
+
+            <fieldset id="pizzaSize">
+               <legend>Select Your Pizza Size</legend>
+
+               <div>
+                  <label>10 inch</label>
+                  <input type="radio" id="ten" />
+               </div>
+               <div>
+                  <label>12 inch</label>
+                  <input type="radio" id="12" checked />
+               </div>
+               <div>
+                  <label>14 inch</label>
+                  <input type="radio" id="14" />
+               </div>
+            </fieldset>
+
+            <fieldset id="pizzaCrust">
+               <legend>Choose Your Crust</legend>
+
+               <select name="crust" id="crust">
+                  <option value="thin" selected>Thin</option>
+                  <option value="thick">Thick</option>
+                  <option value="stuffed">Stuffed</option>
+                  <option value="pan">Pan</option>
+               </select>
+
+            </fieldset>
+
+            <fieldset id="toppings">
+               <legend>Pick your Toppings</legend>
+
+               <div>
+                  <label for="pepperoni">Pepperoni</label>
+                  <input type="checkbox" id="pepperoni" />
+               </div>
+
+               <div>
+                  <label for="chicken">Chicken</label>
+                  <input type="checkbox" id="chicken" />
+               </div>
+
+               <div>
+                  <label for="mushrooms">Mushrooms</label>
+                  <input type="checkbox" id="mushrooms" />
+               </div>
+               <div>
+                  <label for="peppers">Green Peppers</label>
+                  <input type="checkbox" id="greenpeppers" />
+               </div>
+            </fieldset>
+
+            <label for="quantity">Quantity</label>
+            <input type="number" minlength="1" maxlength="2" />
+
+         </fieldset>
+
+      </form>
+
+   </section>
+
+   <footer>
+      <address>
+         Red Ball Pizza &bull;
+         811 Beach Drive &bull;
+         Ormond Beach, FL 32175 &bull;
+         (386) 555 - 7499
+      </address>
+   </footer>
+
+</body>
+
+</html>
