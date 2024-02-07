@@ -63,11 +63,12 @@
             <input type="text" id="city" name="city" placeholder="city" required />
 
             <label for="zip">Postal code *</label>
-            <input type="text" id="zip" name="zip" pattern="[0-9]{5}" placeholder="nnnnn" required />
+            <input class="tooltip" type="text" id="zip" name="zip" title="54321" pattern="[0-9]{5}" placeholder="nnnnn"
+               required />
 
             <label for="phone">Phone *</label>
-            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="nnn-nnn-nnnn"
-               required />
+            <input class="tooltip" type="tel" id="phone" name="phone" title="XXX-XXX-XXXX"
+               pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="nnn-nnn-nnnn" required />
 
             <label for="request">Want it your way?</label>
             <textarea id="request" name="request" placeholder="special requests"></textarea>
@@ -133,10 +134,10 @@
             </fieldset>
 
             <label for="quantity">Quantity</label>
-            <input type="number" minlength="1" maxlength="2" />
+            <input type="number" minlength="1" maxlength="2" required />
 
          </fieldset>
-
+         <button type="submit">Place Order</button>
       </form>
 
    </section>
