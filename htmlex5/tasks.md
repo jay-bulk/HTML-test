@@ -39,11 +39,13 @@ rgb(255, 231, 255).
 - [x] Create a style rule to set to set the font color of the text within the 
 thead element to white and the background color to rgb(105,177,60).  
 
-- [ ] Create a style rule that changes the background color of the first th 
+- [x] Create a style rule that changes the background color of the first th 
 element within the thead element to rgb(153, 86, 7)  
-- [ ] Create a style rule that changes the background color of the 7th and 
+
+- [x] Create a style rule that changes the background color of the 7th and 
 8th th elements within the thead element to rgb(153, 0, 153)  
-- [ ] Create a style rule for the tfoot element that sets the font color to 
+
+- [x] Create a style rule for the tfoot element that sets the font color to 
 white and the background color to black.  
 
 Save the changes.
