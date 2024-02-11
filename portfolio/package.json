@@ -1,0 +1,17 @@
+{
+  "name": "demopages",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sirv --dev --port 8000",
+    "gen-ico": "icon-gen -i ./bullk.svg -o . --favicon"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "icon-gen": "^4.0.0",
+    "sirv-cli": "^2.0.2"
+  }
+}
