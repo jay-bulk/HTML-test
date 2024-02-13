@@ -11,8 +11,8 @@ The web site should include:
 - [ ] significant content (a few paragraphs of text to demonstrate your knowledge 
 of formatting and layout styles) 
 - [ ] professional layout 
-- [ ] A “developed by” line in the footer with your name. 
-- [ ] one or more external style sheets to style and fashion the layout of your 
+- [x] A “developed by” line in the footer with your name. 
+- [x] one or more external style sheets to style and fashion the layout of your 
 html pages (Note: this requirement will account for 50% of the points for 
 this assignment) 
 Save your files on your “W drive”. You must save it within the public_html 
