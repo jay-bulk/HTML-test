@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "sirv --dev --port 8000",
-    "gen-ico": "icon-gen -i ./bullk.svg -o . --favicon"
+    "gen-ico": "icon-gen -i ./assets/bullk.svg -o ./assets --favicon",
+    "gen-svg1": "icon-gen -i ./assets/erheine.svg -o ./assets --favicon-png-sizes 32",
+    "gen-svg2": "icon-gen -i ./assets/scpreusen.svg -o ./assets --favicon-png-sizes 32"
   },
   "keywords": [],
   "author": "",
