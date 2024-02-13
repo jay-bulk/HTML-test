@@ -4,12 +4,14 @@
 }
 .navbar,
 .navbar-spacer {
-  display: block;
+  display: flex;
+  position: relative;
   width: 100%;
   height: 4.5rem;
   background: #69645E;
   z-index: 99;
   border-bottom: 1px solid #D5B472;
+  min-width: 60%;
 }
 .navbar-spacer {
   display: none; 
@@ -25,15 +27,18 @@
   position: relative;
   float: left;
   margin-right: 20px;
-  font-size: 16px;
-  font-weight: 700;
+  font-size: 18px;
+  font-weight: 600;
   text-decoration: none;
-  line-height: 6.5rem;
+  line-height: 4.0rem;
 }
 .avatar {
   height: 35px;
   width: 35px;
-  display: inline-block;
+  float: left;
+  position: relative;
+  margin-top: 5px;
+  margin-right: 5px;
   border-radius: 50%;
 }
 .navbar-item {
@@ -52,6 +57,7 @@
   color: #74D0D8;
 }
 
+
 .navbar-link.active {
   color: #C8B394;
 }
@@ -65,15 +71,110 @@
 .has-docked-nav .navbar-spacer {
   display: block; 
 }
+
 .has-docked-nav .navbar > .container {
   width: 80%; 
 }
+
+.table-shield {
+  align-items: left;
+}
+
+.table-shield-img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-bottom: 1px;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+section#main p{
+  margin: auto;
+}
+
+table.schedule {
+   width: 100%;
+  margin: auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+  overflow-y: auto;
+}
+
+tr {
+   height: 25px;
+}
+
+th, td {
+   border: 1px solid grey;
+   vertical-align: center;
+  text-align: center;
+  padding: 5px;
+}
+th, td.table-shield {
+  text-align: left;
+}
+
+/* Table Caption Styles */
+
+caption {
+   caption-side: bottom;
+   text-align: center;
+}
+
+/* Table Column Styles */
+
+col.wochen-tag {
+  width: 5%;
+  background-color: rgb(215, 205, 151);
+}
+
+col.liega {
+   width: 10%;
+   background-color: rgb(236, 255, 211);
+}
+
+col.home-team {
+   width: 25%;
+}
+
+col.score {
+   width: 7%;
+   background-color: rgb(255, 231, 255);
+  text-align: center;
+  vertical-align: center;
+}
+
+col.gegner {
+   width: 25%;
+}
+
+/* Table Header styles */
+
+thead {
+   color: white;
+   background-color: rgb(8, 108, 126);
+  text-align: center;
+  padding: 5px;
+}
+
+thead td:first-of-type {
+  width: 7%;
+   background-color: rgb(185, 78, 72);
+}
+
+
 .footer-github-link:before {
     background: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E") no-repeat;
     content: "";
     display: inline-block;
-    height: 24px;
-    width: 24px;
+    height: 20px;
+    width: 20px;
+}
+
+.twitter-follow-button {
+  content: "";
+  display: inline-block;
 }
 
 .footbar > container {
