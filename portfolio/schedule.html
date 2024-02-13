@@ -7,183 +7,216 @@ Author: Rhett Bulkley
 Date: Feb 6 2024
 -->
    <meta charset="utf-8" />
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-   <link rel="stylesheet" type="text/css" href="base.css" />
-   <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
    <title>Siegen Ultras</title>
+   <meta name="decscription" content="Website for CIS 665">
+   <meta name="author" content="R Jay Bulkley">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="icon" href="./assets/favicon.ico" type="image/xxs-icon">
+   <link rel="stylesheet" type="text/css" href="./web/hack.css" />
+   <link rel="stylesheet" type="text/css" href="normalize.css" />
+   <link rel="stylesheet" type="text/css" href="skeleton.css" />
+   <link rel="stylesheet" type="text/css" href="custom.css" />
+   <script src="./site.js"></script>
+
 </head>
 
 <body>
-   <header>
-      <nav class="navbar border-bottom navbar-dark bg-dark fixed-top">
-         <div class="container-fluid">
-            <div class="d-flex flex-row justify-content-start">
-               <a href="#" class="navbar-brand">
-                  Ultras
-                  <img src="./ultras.png" alt="Siegen Ultras" width="32" height="32"
-                     class="rounded-circle d-inline-block align-text-top">
+   <section class="header"></section>
+   <nav class="navbar">
+      <div class="container">
+         <ul class="navbar-list">
+            <li class="navbar-item">
+               <a href="./index.html" class="navbar-first">
+                  RJay
+                  <img src="https://github.com/jay-bulk.png" alt="R Jay" width="32" height="32" class="avatar">
                </a>
-               <ul class="nav nav-underline">
-                  <li class="nav-item">
-                     <a class="nav-link" href="./index.html">R Jay</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="./portfolio.html">Portfolio</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="./uses.html">Uses</a>
-                  </li>
-               </ul>
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toogle="offcanvasNavbarDark"
-               data-bs-toggle="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbarDark"
-               aria-labelledby="offcanvasNavbarDarkLabel">
-               <div class="offcanvas-header">
-                  <a class="offcanvas-title" id="offcanvasNavbarDarkLabel" href="./index.html">R Jay
-                     <img src="https://github.com/jay-bulk.png" alt="R Jay" width="32" height="32"
-                        class="rounded-circle">
-                  </a>
-                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                     aria-label="Close"></button>
-               </div>
-               <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                     <li class="nav-item">
-                        <a class="nav-link" href="./index.html">R Jay</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="./portfolio.html">Portfolio</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="./uses.html">Uses</a>
-                     </li>
-                  </ul>
-               </div>
-            </div>
-         </div>
-      </nav>
-   </header>
-
-   <div id="container">
-
+            </li>
+            <li class="navbar-item">
+               <a class="navbar-link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="navbar-item">
+               <a class="navbar-link" href="./schedule.html">Schedule</a>
+            </li>
+         </ul>
+      </div>
+   </nav>
+   <div class="container">
       <section id="main">
-         <img src="dlrLogo2.png" alt="DLR" />
-         <h2>Siegen Sportfreunde Schedule</h2>
+         <h2>SF Siegen Schedule</h2>
+         <a class="logo">
+            <img src="./assets/ultras.png" alt="Siegen Ultras" />
+         </a>
+         </br>
          <p> Siegen Ultras are a community fan base supporting our beloved
-            <em>Siegen Sportfreunde</em>.
+            <em>SF Siegen</em>!
             <br />You can <a href="https://www.sportfreunde-siegen.de/tickets/">Purchase Tickets</a>
-            on the Offiziel Siegen Sportfreunde <a href="#https://www.sportfreunde-siegen.de/">site</a>.
-            <br />The Siegen Ultras meet monthly to discuss chants and events for the upcoming year. See this weeks
-            schedule below.
+            on the Offiziel SF Siegen <a href="#https://www.sportfreunde-siegen.de/">site</a>.
+            <br />Check out the SF Siegen scheudle for game times:
          </p>
 
-         <table class="programs">
+         <table class="u-full-width schedule">
             <caption>All Times Central European Time</caption>
             <colgroup>
-               <col class="timeColumn">
-               <col class="wDaysColumns" span="5">
-               <col class="wEndColumns" span="2">
+               <col class="wochen-tag" span="3">
+               <col class="liega" span="1">
+               <col class="home-team" span="1">
+               <col class="score" span="1">
+               <col class="gegner" span="1">
             </colgroup>
 
             <thead>
+               <td colspan="7">Support your Siegen Ultras</td>
                <tr>
-                  <th>Zeit</th>
-                  <th>Mo</th>
-                  <th>Di</th>
-                  <th>Mi</th>
-                  <th>Do</th>
-                  <th>Fr</th>
-                  <th>Sa</th>
-                  <th>So</th>
+                  <th>WochenTag</th>
+                  <th>Datum</th>
+                  <th>Abpfiff</th>
+                  <th>Liega</th>
+                  <th>Home Team</th>
+                  <th>Score</th>
+                  <th>Gegner</th>
                </tr>
             </thead>
             <tfoot>
                <tr>
-                  <td colspan="8">Support your Siegen Ultras</td>
                </tr>
             </tfoot>
             <tbody>
                <tr>
-                  <th>5:00</th>
-                  <td rowspan="4" colspan="5">Dawn Air</td>
-                  <td rowspan="4">Dawn Air Weekends</td>
-                  <td rowspan="2">Sunday Magazine</td>
+                  <th>So.</th>
+                  <td>28.01.2024</td>
+                  <td>06:30 Uhr</td>
+                  <td>Oberliga Westfalen</td>
+                  <td class="table-shield"><img src="./assets/ultras.png" alt="Siegen" class="table-shield-img" />SF
+                     Siegen
+                  </td>
+                  <td>1&nbsp:&nbsp1</td>
+                  <td class="table-shield"><img src="./assets/vc.webp" class="table-shield-img" />Victoria Clarholz</td>
                </tr>
                <tr>
-                  <th>5:30</th>
+                  <th>So.</th>
+                  <td>04.02.2024</td>
+                  <td>07:00 Uhr</td>
+                  <td>Oberliga Westfalen</td>
+                  <td class="table-shield"><img src="./assets/tdortmund.svg" class="table-shield-img"
+                        style="border-radius: 0%" />T&#252rkspor
+                     Dortmund</td>
+                  <td>3&nbsp:&nbsp3</td>
+                  <td class="table-shield"><img src="./assets/ultras.png" alt="Siegen" class="table-shield-img" />SF
+                     Siegen
+                  </td>
                </tr>
                <tr>
-                  <th>6:00</th>
-                  <td rowspan="2">Weekend Reflections</td>
+                  <th>Sa.</th>
+                  <td>10.02.2024</td>
+                  <td>06:00 Uhr</td>
+                  <td>Oberliga Westfalen</td>
+                  <td class="table-shield"><img src="./assets/ultras.png" alt="Siegen" class="table-shield-img" />SF
+                     Siegen</td>
+                  <td>1&nbsp:&nbsp1</td>
+                  <td class="table-shield"><img src="./assets/erheine.png" alt="Eintracht Rheine"
+                        class="table-shield-img" />Eintracht Rheine
+                  </td>
                </tr>
                <tr>
-                  <th>6:30</th>
+                  <th>So.</th>
+                  <td>18.02.2024</td>
+                  <td>07:00 Uhr</td>
+                  <td>Oberliga Westfalen</td>
+                  <td class="table-shield"><img src="./assets/ultras.png" alt="Siegen" class="table-shield-img" />SF
+                     Siegen</td>
+                  <td>TBD&nbsp:&nbspTBD</td>
+                  <td class="table-shield"><img src="./assets/fcglievenback.svg" class="table-shield-img" />1. FC
+                     Gievenbeck</td>
                </tr>
                <tr>
-                  <th>7:00</th>
-                  <td colspan="5">Local News</td>
-                  <td rowspan="2">Weekend Wrap</td>
-                  <td rowspan="2">Radio U</td>
+                  <th>So.</th>
+                  <td>25.02.2024</td>
+                  <td>07:30 Uhr</td>
+                  <td>Oberliga Westfalen</td>
+                  <td class="table-shield"><img src="./assets/finnen.webp" alt="Finnentrop" class="table-shield-img"
+                        style="border-radius: 0%" />SG
+                     Finnentrop/Bamenohl</td>
+                  <td>TBD&nbsp:&nbspTBD</td>
+                  <td class="table-shield"><img src="./assets/ultras.png" alt="Siegen" class="table-shield-img" />SF
+                     Siegen</td>
                </tr>
                <tr>
-                  <th>7:30</th>
-                  <td colspan="5">World News Feed</td>
+                  <th>Mi.</th>
+                  <td>28.02.2024</td>
+                  <td>11:30 Uhr</td>
+                  <td>Oberliga Westfalen</td>
+                  <td class="table-shield"><img src="./assets/scpreusen.png" alt="SC Preusen" style="border-radius: 0%"
+                        class="table-shield-img" />SC Preusen M&#252nster II</td>
+                  <td>TBD&nbsp:&nbspTBD</td>
+                  <td class="table-shield"><img src="./assets/ultras.png" alt="Siegen" class="table-shield-img" />SF
+                     Siegen
+                  </td>
                </tr>
                <tr>
-                  <th>8:00</th>
-                  <td rowspan="4" colspan="5">Classical Roots</td>
-                  <td rowspan="3">What Can You Say?</td>
-                  <td rowspan="4">University on the Air</td>
+                  <th>So.</th>
+                  <td>03.03.2024</td>
+                  <td>07:00 Uhr</td>
+                  <td>Oberliga Westfalen</td>
+                  <td class="table-shield"><img src="./assets/ultras.png" alt="Siegen" class="table-shield-img" />SF
+                     Siegen
+                  </td>
+                  <td>TBD&nbsp:&nbspTBD</td>
+                  <td class="table-shield"><img src="./assets/spvg.svg" alt="SpVgg Vreden" style="border-radius: 0%"
+                        class="table-shield-img" />SpVgg Vreden</td>
                </tr>
                <tr>
-                  <th>8:30</th>
+                  <th>So.</th>
+                  <td>10.03.2024</td>
+                  <td>08:00 Uhr</td>
+                  <td>Oberliga Westfalen</td>
+                  <td class="table-shield"><img src="./assets/ascd.svg" alt="ASC 09 Dortmund" style="border-radius: 0%"
+                        class="table-shield-img" />ASC 09 Dortmund</td>
+                  <td>TBD&nbsp:&nbspTBD</td>
+                  <td class="table-shield"><img src="./assets/ultras.png" alt="Siegen" class="table-shield-img" />SF
+                     Siegen
+                  </td>
                </tr>
                <tr>
-                  <th>9:00</th>
+                  <th>So.</th>
+                  <td>17.03.2024</td>
+                  <td>08:00 Uhr</td>
+                  <td>Oberliga Westfalen</td>
+                  <td class="table-shield"><img src="./assets/ultras.png" alt="Siegen" class="table-shield-img" />SF
+                     Siegen
+                  </td>
+                  <td>TBD&nbsp:&nbspTBD</td>
+                  <td class="table-shield"><img src="./assets/brun.webp" alt="FC Brunninghausen"
+                        style="border-radius: 0%" class="table-shield-img" />FC Br&#252nninghausen</td>
                </tr>
                <tr>
-                  <th>9:30</th>
-                  <td rowspan="3">Animal Talk</td>
-               </tr>
-               <tr>
-                  <th>10:00</th>
-                  <td rowspan="4" colspan="5">Symphony City</td>
-                  <td>Word Play</td>
-               </tr>
-               <tr>
-                  <th>10:30</th>
-                  <td>Brain Stew</td>
-               </tr>
-               <tr>
-                  <th>11:00</th>
-                  <td rowspan="3">Opera Live from the East Coast</td>
-                  <td>The Inner Mind</td>
-               </tr>
-               <tr>
-                  <th>11:30</th>
-                  <td>Grammar Rules!!</td>
-               </tr>
-               <tr>
-                  <th>12:00</th>
-                  <td colspan="5">Book Club</td>
-                  <td>Weekend Wrap</td>
+                  <th>So.</th>
+                  <td>24.03.2024</td>
+                  <td>08:00 Uhr</td>
+                  <td>Oberliga Westfalen</td>
+                  <td class="table-shield"><img src="./assets/watten.svg" alt="SG Wattenscheid"
+                        style="border-radius: 0%" class="table-shield-img" />SG Wattenscheid 09</td>
+                  <td>TBD&nbsp:&nbspTBD</td>
+                  <td class="table-shield"><img src="./assets/ultras.png" alt="Siegen" class="table-shield-img" />SF
+                     Siegen
+                  </td>
                </tr>
             </tbody>
          </table>
-
       </section>
-
    </div>
 
-   <footer>
-      DLR &#183; 4300 Magnolia Lane &#183; Bismarck, ND 58504 &#183; (701) 555 - 5611
-   </footer>
 </body>
+
+<footer id="footer">
+   <p>Want to get in touch?
+      </br>
+      <a class="footer-github-link" href="https://github.com/jay-bulk"></a>
+      <a href="https://twitter.com/jay_bulk?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false"
+         data-size="small">@jay_bulk</a>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+   </p>
+   Developed by: R Jay Bulkley <a href="./assets/bullk.png" class="footer-img"></a>| Eduard-Schneider-Davids-Strasse 49,
+   57080 Siegen, DE | Built with <a href="http://getskeleton.com/" class="footer-link">#skeleton-css</a>
+</footer>
 
 </html>
