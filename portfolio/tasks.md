@@ -2,15 +2,15 @@ CIS 665 – Spring 2024 HTML and CSS Assignment
 Due Date: Sunday, February 18 @ 11:59 PM 
 Design and build a 3-page web site on any one theme (e.g., travel, business, hobby, sport, entertainment, family). 
 The web site should include: 
-- [ ] consistent header and footer for the three pages 
-- [ ] at least one photo or graphic 
-- [ ] at least one table 
-- [ ] at least one list (ordered, unordered or definition) 
-- [ ] links to other external web pages that you did not develop 
-- [ ] links to the other pages you developed for this site 
-- [ ] significant content (a few paragraphs of text to demonstrate your knowledge 
+- [x] consistent header and footer for the three pages 
+- [x] at least one photo or graphic 
+- [x] at least one table 
+- [x] at least one list (ordered, unordered or definition) 
+- [x] links to other external web pages that you did not develop 
+- [x] links to the other pages you developed for this site 
+- [x] significant content (a few paragraphs of text to demonstrate your knowledge 
 of formatting and layout styles) 
-- [ ] professional layout 
+- [x] professional layout 
 - [x] A “developed by” line in the footer with your name. 
 - [x] one or more external style sheets to style and fashion the layout of your 
 html pages (Note: this requirement will account for 50% of the points for 
