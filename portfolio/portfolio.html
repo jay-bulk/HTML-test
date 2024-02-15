@@ -11,13 +11,12 @@ Date: Feb 6 2024
   <meta name="decscription" content="Website for CIS 665">
   <meta name="author" content="R Jay Bulkley">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="./assets/favicon-228.png" type="image/png">
+  <link rel="icon" href="./assets/favicon.ico" type="image/png">
   <link rel="stylesheet" type="text/css" href="./web/hack.css" />
   <link rel="stylesheet" type="text/css" href="normalize.css" />
   <link rel="stylesheet" type="text/css" href="skeleton.css" />
   <link rel="stylesheet" type="text/css" href="custom.css" />
-  <script src="site.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="./site.js"></script>
 </head>
 
 <body>
@@ -32,10 +31,7 @@ Date: Feb 6 2024
           </a>
         </li>
         <li class="navbar-item">
-          <a class="navbar-link" href="#">Portfolio</a>
-        </li>
-        <li class="navbar-item">
-          <a class="navbar-link" href="./recommendations.html">Recommendations</a>
+          <a class="navbar-link" href="./portfolio.html">Curriculum Vitae</a>
         </li>
         <li class="navbar-item">
           <a class="navbar-link" href="./schedule.html">Schedule</a>
@@ -43,20 +39,114 @@ Date: Feb 6 2024
       </ul>
     </div>
   </nav>
-  <div class="bg-body-tertiary p-5 rounded">
-    <div class="col-sm-8 py-5 mx-auto">
-      <h1 class="display-5 fw-normal">Navbar with offcanvas examples</h1>
-      <p class="fs-5">This example shows how responsive offcanvas menus work within the navbar. For positioning of
-        navbars, checkout the <a href="/docs/5.3/examples/navbar-static/">top</a> and <a
-          href="/docs/5.3/examples/navbar-fixed/">fixed top</a> examples.</p>
-      <p>From the top down, you'll see a dark navbar, light navbar and a responsive navbar—each with offcanvases built
-        in. Resize your browser window to the large breakpoint to see the toggle for the offcanvas.</p>
-      <p>
-        <a class="btn btn-primary" href="/docs/5.3/components/navbar/#offcanvas" role="button">Learn more about
-          offcanvas navbars »</a>
+  <div class="buffer"></div>
+  <div class="container">
+    <div class="centered">
+      <h1 style="text-transform: uppercase">R. Jay Bulkley</h1>
+      <img id="portfolio" class="centered" src="./assets/octo.png" width=200px, height=200px />
+      <p id="subnote" class="subnote">
+        <a href="#footer" style="text-decoration: none">#Contact Information Below</a>
       </p>
     </div>
-  </div>
+    <div class="doc centered">
+      <div id="experience" class="docTable1">
+        <div id="experience" class="docTableHead">
+          <p class="heading">Experience</p>
+        </div>
+        <ul class="experience-list-header">Back-End Engineer | Nov '22 - Present
+          <li style="font-size: .8rem, text-transform: uppercase" class="experience-list-company"> Brigham Young
+            University Office of Information Technology
+          </li>
+          <li class="experience-list-item">Build data-pipelines APIs for campus data consumption
+          </li>
+          <li class="experience-list-item">Lead guild to set standards around development practices
+          </li>
+          <li class="experience-list-item">Contribute to open source software as campus open source rep
+          </li>
+        </ul>
+        <ul class="experience-list-header">Commissions Engineer | June '22 - Nov '22
+          <li style="font-size: .8rem, text-transform: uppercase" class="experience-list-company">
+            Infotrax Systems
+          </li>
+          <li class="experience-list-item">Aid company shift from SaaS to PaaS solution
+          </li>
+          <li class="experience-list-item">Built custom and highly complex compensation plans useing a CSL built in
+            COBOL
+          </li>
+          <li class="experience-list-item">Python/Golang scripting to improve systems engineering experience
+          </li>
+        </ul>
+        <ul class="experience-list-header"> Systems Security &#38 Compliance | Mar '21 - June '22
+          <li style="font-size: .8rem, text-transform: uppercase" class="experience-list-company"> Infotrax Systems
+          </li>
+          <li class="experience-list-item">Owned/Administered systems monitoring observability cluster (ELK stack)
+          </li>
+          <li class="experience-list-item">Managed Nagios alert system and SOC compliance alerts
+          </li>
+          <li class="experience-list-item">Was responsible for cybersec posturing, security pen-testing and compliance
+            adherance
+          </li>
+        </ul>
+        <ul class="experience-list-header">Linux Admin | Feb '20 - June '22
+          <li style="font-size: .8rem, text-transform: uppercase" class="experience-list-company"> Infotrax Systems
+          </li>
+          <li class="experience-list-item">CENTOS 6/7 and Rocky Linux administration and scripting in VMWare environment
+          </li>
+        </ul>
+        <ul class="experience-list-header">IT Admin | July '19 - Feb '20
+          <li style="font-size: .8rem, text-transform: uppercase" class="experience-list-company"> Solcius LLC
+          </li>
+          <li class="experience-list-item">Website maintenance and faculty research
+          </li>
+        </ul>
+        <ul class="experience-list-header">Research Assistant | Oct '17 - May '18
+          <li style="font-size: .8rem, text-transform: uppercase" class="experience-list-company"> Brigham Young
+            University School of Accounting
+          </li>
+          <li class="experience-list-item">Website maintenance and faculty research
+          </li>
+        </ul>
+      </div>
+      <div id="experience" class="docTable1">
+        <div id="experience" class="docTableHead">
+          <p class="heading">Volunteer</p>
+        </div>
+        <ul class="experience-list-header">Open Source Maintainer | May '23 - Present
+          <li style="font-size: .8rem, text-transform: uppercase" class="experience-list-company">
+            StandardJS
+          </li>
+          <li class="experience-list-item">Maintain open source javascript linter and accompanying libraries
+          </li>
+        </ul>
+        <ul class="experience-list-header">Full Time Missionary | June '13 - May '15
+          <li style="font-size: .8rem, text-transform: uppercase" class="experience-list-company">
+            The Church of Jesus Christ of Latter-day Saints
+          </li>
+          <li class="experience-list-item">
+            Moved to Germany for two years to assist individuals of all backgrounds in coming unto Jesus Christ
+          </li>
+          <li class="experience-list-item">
+            Worked from 9AM-9PM everyday to provide community service and show forth a Christlike example in all things
+            (albeit imperfectly)
+          </li>
+        </ul>
+      </div>
+      <div id="experience" class="docTable1">
+        <div id="experience" class="docTableHead">
+          <p class="heading">Education</p>
+        </div>
+        <ul class="experience-list-header">Masters of Computer Information Systems | Exp. Graduation '24
+          <li style="font-size: .8rem, text-transform: uppercase" class="experience-list-company">
+            Colorado State University
+          </li>
+        </ul>
+        <ul class="experience-list-header">Bachelor's of Science, Economics w/ Business Minor | Grad. '19
+          <li style="font-size: .8rem, text-transform: uppercase" class="experience-list-company">
+            Brigham Young University
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </body>
 

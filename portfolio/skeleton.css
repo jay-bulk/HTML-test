@@ -36,6 +36,38 @@
   padding: 0 20px;
 }
 
+.centered {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  padding: 10px;
+  justify-content: center;
+  text-align: center;
+}
+
+img.centered#portfolio {
+  background: black;
+  border-radius: 50%;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  padding: 0;
+  justify-content: center;
+}
+
+.container > .centered > p.subnote#subnote {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  padding: 0;
+}
+
+.front-page {
+  padding-top: 10px
+}
+
+.hero {
+  margin: 30px 150px 30px;
+  justify-content: center;
+}
+
 a.logo > img {
   width: 150px;
   height: 150px;
@@ -118,16 +150,20 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 }
 
 p {
-  margin-top: 0; 
+  margin-top: 0;
   margin: auto;
 }
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #1EAEDB; }
+  color: #1EAEDB; 
+}
+
 a:hover {
-  color: #0FA0CE; }
+  color: rgb(92, 27, 16)
+  /* color: #0FA0CE; */
+}
 
 
 /* Buttons
@@ -140,7 +176,7 @@ input[type="button"] {
   display: inline-block;
   height: 38px;
   padding: 0 30px;
-  color: #555;
+  color: rgb(252, 162, 58);
   text-align: center;
   font-size: 11px;
   font-weight: 600;
@@ -149,11 +185,12 @@ input[type="button"] {
   text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
-  background-color: transparent;
+  background-color: rgb(218, 67, 37);
   border-radius: 4px;
   border: 1px solid #bbb;
   cursor: pointer;
-  box-sizing: border-box; }
+  box-sizing: border-box; 
+}
 .button:hover,
 button:hover,
 input[type="submit"]:hover,
@@ -164,9 +201,10 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-  color: #333;
   border-color: #888;
-  outline: 0; }
+  color: rgb(97, 28, 16);
+  outline: 0; 
+}
 .button.button-primary,
 button.button-primary,
 input[type="submit"].button-primary,
@@ -174,7 +212,8 @@ input[type="reset"].button-primary,
 input[type="button"].button-primary {
   color: #FFF;
   background-color: #33C3F0;
-  border-color: #33C3F0; }
+  border-color: #33C3F0; 
+}
 .button.button-primary:hover,
 button.button-primary:hover,
 input[type="submit"].button-primary:hover,
@@ -187,7 +226,9 @@ input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
   color: #FFF;
   background-color: #1EAEDB;
-  border-color: #1EAEDB; }
+  border-color: #1EAEDB; 
+}
+
 
 
 /* Forms
@@ -330,7 +371,8 @@ hr {
   margin-top: 3rem;
   margin-bottom: 3.5rem;
   border-width: 0;
-  border-top: 1px solid #E1E1E1; }
+  border-top: 1px solid #E1E1E1; 
+}
 
 
 /* Clearing
